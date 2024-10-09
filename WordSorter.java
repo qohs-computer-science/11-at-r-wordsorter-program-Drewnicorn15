@@ -123,8 +123,11 @@ public class WordSorter
 						System.out.println("Word successfully removed from the list");
 					}else
 					System.out.println("Word NOT found in the article");
-				else
+				else if(s.contains(toremove)){
 					s.remove(toremove);
+					System.out.println("Word successfully removed from the list");
+				}else
+					System.out.println("Word not in List");
 			}else if(selected == 6)
 				break;
         }
